@@ -1,0 +1,40 @@
+.first-v {
+    background-image: url(../img/bg1.jpg);
+    width: 53%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    margin-left: auto;
+    @include tab {
+        width: 100%;
+    }
+    &_wrap {
+        position: absolute;
+        top: 50%;
+        left: -44%;
+        transform: translate(-50%, -50%);
+        height: 23%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        min-width: 390px;
+        @include tab {
+            left: 50%;
+            flex-direction: column-reverse;
+            color: #fff;
+            text-shadow: 0 3px 16px black;
+        }
+    }
+}
+
+.catch1 {
+    font-family: ヒラギノ明朝 Pro, sans-serif;
+    font-size: 3.8rem;
+    text-align: center;
+}
+
+.catch2 {
+    font-family: Zapfino, sans-serif;
+    font-size: 3.8rem;
+    text-align: center;
+}

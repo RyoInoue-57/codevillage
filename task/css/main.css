@@ -1,0 +1,499 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=reset.css.map */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.67;
+}
+
+.title {
+  color: #707070;
+  font-style: normal;
+  font-family: Roboto, sans-serif;
+  margin-bottom: 12px;
+  letter-spacing: 10px;
+}
+.title:after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid;
+  width: 5em;
+  margin-right: 1.7rem;
+  vertical-align: middle;
+}
+
+.inner {
+  width: 84%;
+  padding: 296px 0 70px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  color: black;
+  padding: 62px 0 0 77px;
+}
+@media screen and (max-width: 959px) {
+  header {
+    position: relative;
+    padding: 24px 21px;
+    justify-content: space-between;
+  }
+}
+
+.hd-logo {
+  font-size: 3.8rem;
+  margin-right: 15px;
+}
+@media screen and (max-width: 959px) {
+  .hd-logo {
+    font-size: 2.2rem;
+  }
+}
+
+nav {
+  width: 35%;
+}
+@media screen and (max-width: 959px) {
+  nav {
+    display: none;
+  }
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+}
+nav ul li:nth-child(2),
+nav ul li:nth-child(3),
+nav ul li:nth-child(4) {
+  color: #707070;
+}
+nav ul li:nth-child(1) {
+  text-decoration: underline;
+}
+
+.ham {
+  display: none;
+}
+@media screen and (max-width: 959px) {
+  .ham {
+    width: 14px;
+    height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .ham span {
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+  .ham span:nth-child(3) {
+    width: 50%;
+  }
+}
+
+.first-v {
+  background-image: url(../img/bg1.jpg);
+  width: 53%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  margin-left: auto;
+}
+@media screen and (max-width: 959px) {
+  .first-v {
+    width: 100%;
+  }
+}
+.first-v_wrap {
+  position: absolute;
+  top: 50%;
+  left: -44%;
+  transform: translate(-50%, -50%);
+  height: 23%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-width: 390px;
+}
+@media screen and (max-width: 959px) {
+  .first-v_wrap {
+    left: 50%;
+    flex-direction: column-reverse;
+    color: #fff;
+    text-shadow: 0 3px 16px black;
+  }
+}
+
+.catch1 {
+  font-family: ヒラギノ明朝 Pro, sans-serif;
+  font-size: 3.8rem;
+  text-align: center;
+}
+
+.catch2 {
+  font-family: Zapfino, sans-serif;
+  font-size: 3.8rem;
+  text-align: center;
+}
+
+.comcept {
+  background: linear-gradient(to bottom, #A193861F 0%, #A193861F 40%, #A1938689 40%, #A1938689 100%);
+}
+.comcept_img1, .comcept_img2 {
+  width: 100%;
+}
+.comcept_img1 img, .comcept_img2 img {
+  height: 100%;
+}
+
+.comcept_img1 {
+  width: 60%;
+  background-size: cover;
+}
+@media screen and (max-width: 959px) {
+  .comcept_img1 {
+    margin-top: 50px;
+    height: 27%;
+  }
+}
+
+.comcept_img2 {
+  width: 33%;
+  background-size: cover;
+  margin-left: 11px;
+}
+@media screen and (max-width: 959px) {
+  .comcept_img2 {
+    margin-top: 50px;
+    height: 27%;
+  }
+}
+
+.comcept-wrap {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.sen {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 69px;
+  color: #fff;
+}
+@media screen and (max-width: 959px) {
+  .sen {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.comcept_sub {
+  font-family: ヒラギノ明朝 Pro, sans-serif;
+  font-size: 4rem;
+  width: 40%;
+  letter-spacing: 16px;
+  min-width: 400px;
+  text-align: center;
+}
+@media screen and (max-width: 959px) {
+  .comcept_sub {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+}
+.comcept_desc {
+  width: 39%;
+}
+@media screen and (max-width: 959px) {
+  .comcept_desc {
+    width: 100%;
+    font-size: 1.6rem;
+    margin-top: 18px;
+  }
+}
+
+.menu_img {
+  width: 100%;
+}
+.menu_img img {
+  width: 100%;
+}
+
+.menu-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .menu-wrap {
+    flex-direction: column;
+  }
+}
+
+.menu-item {
+  width: 25.5%;
+}
+@media screen and (max-width: 600px) {
+  .menu-item {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .menu-item:nth-child(1) {
+    margin-top: 30px;
+  }
+}
+
+.menu_content {
+  padding: 37px 10px 0;
+}
+.menu_content_title {
+  text-align: center;
+  font-size: 3rem;
+}
+.menu_content_intro {
+  font-style: 1.6rem;
+  margin-top: 3.4rem;
+  margin-bottom: 34px;
+}
+.menu_content_price {
+  text-align: right;
+}
+
+.access {
+  color: #fff;
+  background-color: #A193861F;
+  padding: 296px 0 70px;
+  position: relative;
+}
+.access-wrap {
+  display: flex;
+  justify-content: space-between;
+  background-color: #D0C5BA;
+}
+@media screen and (max-width: 959px) {
+  .access-wrap {
+    flex-direction: column-reverse;
+  }
+}
+
+.map {
+  height: 400px;
+  width: 60%;
+}
+@media screen and (max-width: 959px) {
+  .map {
+    width: 100%;
+  }
+}
+
+.address {
+  height: 400px;
+  margin: auto;
+  line-height: 40px;
+  margin-left: 0;
+  padding-top: 100px;
+}
+@media screen and (max-width: 959px) {
+  .address {
+    margin: auto;
+    line-height: 70px;
+    padding-top: 28px;
+    margin-left: 40px;
+  }
+}
+.address_title {
+  font-size: 2.4rem;
+  font-family: Roboto Mono for Powerline, sans-serif;
+  color: #00000038;
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  height: 342px;
+  font-size: 3.2rem;
+  color: #7070704D;
+  position: relative;
+}
+
+.footer-mza {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+@media screen and (max-width: 959px) {
+  .footer-mza {
+    flex-direction: column-reverse;
+    height: 200px;
+  }
+}
+
+i {
+  color: black;
+  font-size: 2.5rem;
+  text-align: right;
+}
+
+.reserve {
+  font-size: 1.8rem;
+  color: #707070;
+  border: 1px solid #707070;
+  padding: 10px 41px;
+  display: inline-block;
+}
+@media screen and (max-width: 959px) {
+  .reserve {
+    margin: 0 auto;
+  }
+}
+
+.fo {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #70707036;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  width: 84%;
+}
+
+.footer-logo {
+  display: flex;
+}
+@media screen and (max-width: 959px) {
+  .footer-logo {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
